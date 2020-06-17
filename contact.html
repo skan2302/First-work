@@ -3,10 +3,11 @@
 <html>
 <head>
   <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="./Css/style.css">
 </head>
 <body>
     <nav>
-        <a href="./home.html">Home</a>
+        <a href="./CoWorking.html">Home</a>
         <a href="./contact.html">contact</a>
     </nav>
     <h2>Let's talk</h2>
@@ -26,5 +27,21 @@
 
       <input type="submit" value="Submit" />
     </form>
+    <br>
+    <h1>Direction</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body> 
 
