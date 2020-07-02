@@ -1,0 +1,27 @@
+Algorithm text analyse 
+
+
+var 
+ c : CHAR := '';
+    n : INTEGER := 0;
+    w : INTEGER := 0;
+    v : INTEGER := 0;
+
+Begin
+WHILE (c <> '.') DO
+        Read(c);
+        n := n+1;
+        IF (c = 'a' OR c='e' OR c='i' OR c='o' OR c='u' OR c='y') THEN
+            v := v +1;
+        END_IF
+
+        IF (c=' ') THEN
+            w := w +1;
+        END_IF
+        
+    END_WHILE
+
+    Write("The length of the sentence is ",n);
+    Write("The number of words in the sentence is ",w);
+    Write("he number of vowels in the sentence. is ",v);
+END
